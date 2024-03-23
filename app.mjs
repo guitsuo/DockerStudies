@@ -7,3 +7,8 @@ const app = express ();
 app.get('/', (req,res) => { 
     res.send('<h2> HI there! </h2');
 }) 
+
+await connectToDatabase();
+
+app.listen(3000);
+
